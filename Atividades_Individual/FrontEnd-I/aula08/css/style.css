@@ -10,7 +10,9 @@ h1 {
 }
 
 .media-picture {
-  height: 2;
+  /* height: 400px; */
+  background-size: cover;
+
 }
 
 .review-score {
