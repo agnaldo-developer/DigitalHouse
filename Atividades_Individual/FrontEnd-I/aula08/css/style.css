@@ -11,7 +11,9 @@ h1 {
 
 .media-picture {
   /* height: 400px; */
+  background-position: center;
   background-size: cover;
+
 
 }
 
