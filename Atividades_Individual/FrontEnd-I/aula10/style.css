@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav {
+
+  background-color: #1CD1B0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+
+.header {
+  position: relative;
+  background-color: #00669F;
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  border: 2px;
+  padding: 10px;
+}
+
+.main-card {
+  width: 900px;
+  height: 580px;
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.main-card .card {
+  background-color: #F3F3F3;
+  width: 400px;
+  height: 580px;
+}
+
+.main-card .card .card-wallpaper {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main-card .card .card-profile {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -80px;
+  left: 110px;
+  border-radius: 50%;
+}
+
+.main-card .card .card-title {
+  text-align: center;
+  position: relative;
+  bottom: 70px;
+  right: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.main-card .card .card-text {
+  height: 50px;
+  width: 350px;
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+  text-align: justify;
+  font-size: 15px;
+
+}
+
+.main-card .card .card-btn {
+  position: relative;
+  top: 70px;
+  left: 140px;
+  height: 50px;
+  width: 100px;
+  background-color: #00669F;
+  color: #F3F3F3;
+}
+
+.main-card .card .card-heart {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 420px;
+  right: 85px;
+}
+
+.footer {
+  color: #F3F3F3;
+  background-color: #00669F;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer .footer-text {
+  position: flex;
+  align-items: center;
+  padding: 10px;
+}
