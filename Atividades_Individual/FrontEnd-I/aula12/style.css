@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-head {
+  background-color: black;
+  color: white;
+  position: flex;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 50px;
+  background-color: #F0A83E;
+  position: flex;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  /* position: relative; */
+  padding: 40px;
+}
+
+.nav-menu .nav-menu-link {
+  width: 100%;
+  /* color: white; */
+  position: flex;
+  display: inline-flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 4px;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 410px;
+  background-image: url('../aula12/images/bg-head.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main .main-bloco {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  right: 10px;
+}
+
+.main .main-bloco .main-title {
+  position: relative;
+  text-align: center;
+  display: inline;
+  top: 15px;
+  font-size: 25px;
+  font-weight: 200;
+  padding: 15px;
+}
+
+.main .main-p {
+  position: relative;
+  right: 50px;
+  top: 2px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.main .main-button {
+  width: 141px;
+  height: 49px;
+  border: none;
+  background-color: #F0A83E;
+  color: white;
+  position: relative;
+  right: 100px;
+  top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.products {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.products .products-img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  left: 145px;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products .products-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3C2313;
+  position: relative;
+  top: 20px
+}
+
+.menu {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu .menu-products {
+  width: 100%;
+  /* color: white; */
+  position: relative;
+  left: 20px;
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  gap: 4px;
+  align-items: center;
+  color: #666666;
+}
+
+.menu-general {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+}
+
+.unit {
+  width: 265px;
+  height: 312px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.unit .unit-title {
+  color: #3C2313;
+  font-size: 15px;
+}
+
+.unit .unit-preco {
+  color: #F0A83E;
+  font-size: 15px
+}
+
+.contato {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  top: 20px;
+  display: flex;
+  border: 1px solid black;
+  margin: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato .contato-title {
+  color: #3C2313;
+  font-size: 25px;
+
+}
