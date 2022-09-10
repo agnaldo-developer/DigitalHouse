@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #003049;
+
+}
+
+.main-title-1 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.main-title-2 {
+  font-size: 30px;
+  color: #F77F00;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.main-logo {
+  display: flex;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  text-decoration: underline;
+  gap: 24px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+}
+
+.main-menu a:visited {
+  color: white;
+}
+
+.banner {
+  width: 100%;
+
+  height: 100vh;
+  background-image: url('../checkpoint/images/872688.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.destaques {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.destaques .destaques-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+}
+
+.destaques .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+.destaques .images-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.trailer {
+  width: 100%;
+  height: 100vw;
+}
+
+.trailer .trailer-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 100px;
+
+}
+
+.trailer .movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px
+}
+
+.rodape {
+  width: 100%;
+  height: 150px;
+  background-color: #003049;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape .rodape-images {
+
+  display: flex;
+  justify-content: center;
+  width: 2%;
+  /* height: 300px; */
+  /* border: 2px solid black; */
+}
+
+.rodape .rodape-icon1 {
+
+  width: 100px;
+  height: 50px;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.rodape .rodape-icon2 {
+  width: 80px;
+}
+
+.rodape .rodape-title {
+  color: white;
+
+}
+
+@media(max-width:425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-title-1 {
+    font-size: 50px;
+  }
+
+  .main-title-2 {
+    font-size: 60px;
+  }
+
+  .main-logo {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .banner {
+    /* max-width: 425px;
+    max-height: 425px; */
+    background-image: url('../checkpoint/images/872688.jpg');
+    background-size: cover;
+
+  }
+
+  .trailer-title {
+    text-align: left;
+  }
+}
