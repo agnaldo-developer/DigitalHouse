@@ -136,4 +136,18 @@ footer {
         justify-content: center;
 
     }
-}
+
+    .hero-card .profile-image {
+
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+        position: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .profile-image .card-title {
+        background-color: white;
+    }
