@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Super Herói</title>
+  <link rel="stylesheet" href="../aula17/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="main-title">
+      <h1>Adicionar seu super-herói</h1>
+      <p>Adicione seu personagem favorito completando as informações</p>
+    </div>
+    <div class="main">
+
+      <div class="main-one">
+        <form>
+          <div class="controlador">
+            <label for="nome">*Nome</label>
+            <input type="text" name="nome">
+          </div>
+          <div class="controlador">
+            <label for="date">Data de Nascimento</label>
+            <input type="date" name="date">
+          </div>
+          <div class="controlador">
+            <textarea id="descricao" cols="40" rows="14">Descrição</textarea>
+          </div>
+      </div>
+      </form>
+      <div class="main-two">
+        <div class="controlador">
+          <label for="especie">*Especie</label>
+        </div>
+        <div class="controlador">
+          <select id="especie" required>
+            <option value="" selected>Espécie</option>
+            <option value="1">Macho</option>
+            <option value="2">Femea</option>
+          </select>
+        </div>
+        <div class="controlador">
+          <label for="picture">Adicionar foto</label>
+          <input type="file" name="picture">
+        </div>
+        <div class="box-checkbox">
+          <p>Poderes</p>
+          <div class="checkbox">
+            <input type="checkbox" id="1">
+            <label for="1">Voar</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="2">
+            <label for="2">Super Inteligencia</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="3">
+            <label for="3">Visão de Raio Laser</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="4">
+            <label for="4">Super Rico</label>
+          </div>
+        </div>
+        <div class="box-radio">
+          <p>Tipo de personaje</p>
+          <div class="radio">
+            <input type="radio" id="radio1">
+            <label for="radio1">Herói/Heroína</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="radio2">
+            <label for="radio2">Vilão/Vilã</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
