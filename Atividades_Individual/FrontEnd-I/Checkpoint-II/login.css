@@ -1,0 +1,33 @@
+main {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+form input {
+  outline: unset;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #7a7a77;
+  border-radius: 10px;
+}
+
+form input:focus:focus {
+  background-color: antiquewhite;
+}
+
+.btn-entrar {
+  background-color: #7a7a77;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}

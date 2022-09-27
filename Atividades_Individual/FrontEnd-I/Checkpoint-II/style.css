@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,100&family=Roboto:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: #7a7a77;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 100px; */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  font-size: 100px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.nav-custom {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/banner-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px
+}
+
+span p {
+  font-size: 100px;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: white
+}
+
+section button {
+  padding: 15px 30px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background: linear-gradient(to right, gold, rgb(255, 123, 0));
+  cursor: pointer;
+}
+
+button:hover {
+  animation-name: botao;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 50px 20px rgba(255, 166, 0, 0.5);
+}
+
+@keyframes botao {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+
+*/ b {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opcoes-title {
+  padding: 100px;
+  text-align: center;
+  margin: 40px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-size: 70px;
+}
+
+.opcoes {
+  width: 100%;
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-1 {
+  width: 500px;
+  height: 800px;
+  margin: 25px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.card-img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.card-body {
+  height: 300px;
+  padding: 15px;
+  text-align: center;
+  /* border: 1px solid black; */
+
+}
+
+.card-local {
+  font-size: 16px;
+}
+
+.card-titulo {
+  font-size: 40px;
+  margin: 20px;
+}
+
+
+.card-texto {
+  font-size: 20px;
+  width: 400px;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #7a7a77;
+
+}
+
+.card-footer a {
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+.card-body a {
+  background-color: #7a7a77;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.opcoes-card {
+  margin: 50px;
+}
+
+/* Animação Hover */
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* Footer */
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #7a7a77;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid black;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  /* padding: 20px 30px; */
+  color: white;
+}
+
+.footer-content p,
+i {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-student {
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+
+
+}
+
+.footer-final p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+
+  color: white;
+  text-align: center;
+  /* padding: 40px; */
+}
+
+.icon-list img {
+  margin-right: 8px;
+}
+
+.active {
+  color: #e51b3e !important;
+  cursor: default;
+}
+
+/* Configuração para telas menores */
+@media screen and (max-width: 767px) {
+  span p {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: white
+  }
+
+  .logo {
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 100px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+
+  section span p {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: white
+  }
+
+  section button {
+    padding: 15px 30px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(to right, gold, rgb(255, 123, 0));
+    cursor: pointer;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('./img/banner-2.jpg');
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px
+  }
+
+  .opcoes-title {
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .opcoes {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+  }
+
+  .content .card-background {
+    width: 33.33%;
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+
+  .content .card-background:hover {
+    transform: scale(0.965);
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-final {
+    width: 100%;
+  }
+}

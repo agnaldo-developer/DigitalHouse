@@ -1,0 +1,29 @@
+.picture {
+  width: 100%;
+  height: 900px;
+  background-image: url('./img/Espetacular-casa-de-luxo-a-venda-em-Praia-do-Forte-7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.descrition {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.movie iframe {
+  border-radius: 20px;
+}
