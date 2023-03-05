@@ -6,8 +6,55 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+/*body {
   background-color: rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  padding: 5rem;
+  transition: background 0.5s linear, color 0.5s linear;
+}*/
+
+body.dark{
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  padding: 5rem;
+  transition: background 0.5s linear, color 0.5s linear;
+  background-color: black;
+ 
+
+}
+
+.containerx{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+label{
+  background-color: black;
+  border-radius: 40%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.5s linear;
+}
+
+body.dark label{
+  background-color: white;
+}
+
+input{
+  visibility: hidden;
 }
 
 h1 {
@@ -73,4 +120,3 @@ você terá que modificar os seletores a fim de poder resolver o exercício. /*
 {
   color: rgb(230, 230, 230);
 }
-*/
